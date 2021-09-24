@@ -16,8 +16,8 @@ Add the "Programs" and/or "All Programs" to your ~/.jwmrc as desired, perhaps li
     <!-- The root menu. -->
     <RootMenu onroot="12">
         <Include>/etc/jwm/debian-menu</Include>
-        <Include>/home/owner/.local/share/system-applications-menu</Include>
-        <Include>/home/owner/.local/share/applications-menu</Include>
+        <Include>$HOME/.local/share/system-applications-menu</Include>
+        <Include>$HOME/.local/share/applications-menu</Include>
 . . .
 ```
 
