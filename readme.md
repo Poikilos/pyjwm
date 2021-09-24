@@ -21,7 +21,7 @@ Add the "Programs" and/or "All Programs" to your ~/.jwmrc as desired, perhaps li
 . . .
 ```
 
-The regen-all.sh script calls the jwmgen.py script, which will automatically add " (flatpak)" to the end of the visible name of the program if the Exec line of the desktop file contains "flatpak". This will allow you to knowingly choose between 2 different programs if both a packaged or self-built version and a flatpak version is installed:
+The regen-all.sh script calls the jwmgen.py script, which will automatically add " (flatpak)" to the end of the visible name of the program if the Exec line of the desktop file contains "flatpak". This will allow you to knowingly choose between 2 different programs if a distro-/self-built version and a flatpak version are both installed:
 
 ![Screenshot of OpenSCAD and OpenSCAD (flatpak) icons coexisting](screenshot.png)
 
