@@ -336,6 +336,7 @@ def generateJWMMenu(rootPaths, menuPath, settings):
     dom = impl.createDocument(None, "some_tag", None)
     # top_element = dom.documentElement
     top_element = dom.createElement("JWM")
+    top_element.appendChild(dom.createComment(u"This XML file was generated (and changes will likely be overwritten) by pyjwm."))
     rootMenuE = dom.createElement("Menu")
     rootMenuE.setAttribute("label", settings["menu-name"])
     top_element.appendChild(rootMenuE)
