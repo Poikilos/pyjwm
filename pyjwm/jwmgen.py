@@ -247,6 +247,7 @@ def appendApplications(parentMenuE, categorized, dom):
             if thisMenuE is None:
                 thisMenuE = dom.createElement("Menu")
                 thisMenuE.setAttribute("label", category)
+                thisMenuE.setAttribute("icon", "folder")
                 menus[category] = thisMenuE
                 parentMenuE.appendChild(thisMenuE)
         for item in items:
@@ -339,6 +340,7 @@ def generateJWMMenu(rootPaths, menuPath, settings):
     top_element.appendChild(dom.createComment(u"This XML file was generated (and changes will likely be overwritten) by pyjwm."))
     rootMenuE = dom.createElement("Menu")
     rootMenuE.setAttribute("label", settings["menu-name"])
+    rootMenuE.setAttribute("icon", "folder")
     top_element.appendChild(rootMenuE)
 
     # text = dom.createTextNode('Some textual content.')
