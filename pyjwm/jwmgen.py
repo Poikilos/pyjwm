@@ -294,7 +294,7 @@ def appendApplications(parentMenuE, categorized, dom):
                     Name = Name[1:-1]
             #if item.get("Name") is None:
             item["Name"] = Name
-        items = sorted(items, key=lambda x: x.get("Name"))
+        items = sorted(items, key=lambda x: x.get("Name").lower())
         for item in items:
             Exec = item.get("Exec")
             if Exec is None:
